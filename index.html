@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+   <!-- CSS Stylesheets -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+
+   
+    <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 10px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body">
+
+
+
+  
+<div class="container-fluid">
+  <div class="row"> 
+    <div class="col-lg-6 dashboard-title">
+    <h2 id="heading-1" >Social Media Dashboard</h2>
+    <p> Total Followers: 23,004</p></div>
+    <div class="col-lg-6">
+      <div class="dark-mode">
+        <p>Dark Mode</p>
+          <div class="switcher" >
+            <label class="switch">
+              <input type="checkbox" onclick="one()">
+              <span class="slider round"></span>
+          </div>
+       </label>
+     
+      </div>
+      
+    </div>
+   </div>
+  </div>
+   <!-- TOP CARDS -->
+<div class="row">
+  <div class="col-lg-3">
+    <div class="card top facebook card-white" id="card-1">
+    
+      <div class="card-body">
+        <h1><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="" > @nathanf</h1>
+       
+        <span class="big-number" id="heading-2" >1987</span>
+        <p class="foll">Followers</p>
+        <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" srcset=""> 12 Today</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card top twitter card-white" id="card-2">
+      
+      <div class="card-body">
+        <h1><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="" > @nathanf</h1>
+       
+        <span class="big-number" id="heading-3">1044</span>
+        <p class="foll">Followers</p>
+        <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" > 99 Today</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card top instagram card-white"  id="card-3">
+      
+      <div class="card-body">
+        <h1><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="" > @realnathanf</h1>
+       
+        <span class="big-number" id="heading-4">11k</span>
+        <p class="foll">Followers</p>
+        <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" > 1099 Today</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card top you-tube card-white" id="card-4">
+      
+      <div class="card-body">
+        <h1><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="" > Nathan F.</h1>
+       
+        <span class="big-number" id="heading-5">8239</span>
+        <p class="sub">Subscribers</p>
+        <span class="negative-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" > 144 Today</span>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+</div>
+ 
+
+ 
+<h3 class="overview">Overview - Today</h3>
+
+ <div class="container-fluid">
+
+  <!-- BOTTOM CARDS -->
+
+  <!-- Row 1 -->
+   <div class="row overview-row-1">
+     
+     <div class="col-lg-3">
+       <div class="card card-white" id="card-5">
+         <div class="card-body">
+         <div class="overview-header-1">
+           <h1>Page Views</h1>
+          <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg"  alt="" srcset=""> </div>
+        <div class="overview-footer">  
+          <span class="small-number" id="heading-6">87</span>
+          <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" > 3%</span></div>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-lg-3">
+      <div class="card card-white" id="card-6">
+        <div class="card-body">
+        <div class="overview-header">
+          <h1 >Likes </h1>
+          <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="" srcset="">
+        </div>
+       <div class="overview-footer">
+        <span class="small-number" id="heading-7">52</span>
+        <span class="negative-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" > 2%</span>
+       </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="card card-white" id="card-7">
+        <div class="card-body">
+        <div class="overview-header">
+          <h1 >Likes </h1>
+          <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="" srcset="">
+        </div>
+
+        <div class="overview-footer-1">
+          <span class="small-number" id="heading-8">5462</span>
+          <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" >  2257%</span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="card card-white" id="card-8">
+        <div class="card-body">
+         <div class="overview-header-2">
+          <h1 >Profile Views </h1>
+          <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="" srcset="">
+         </div>
+         
+        <div class="overview-footer-2">
+          <span class="small-number" id="heading-9">52k</span>    
+          <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" >  1375%</span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+<!-- ROW 2 -->
+   <div class="row  overview-row-2">
+     
+    <div class="col-lg-3">
+      <div class="card card-white" id="card-9">
+        <div class="card-body">
+       <div class="overview-header-1">
+        <h1>Retweets </h1>
+        <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="" srcset="">
+       </div>
+      <div class="overview-footer-2">
+        <span class="small-number" id="heading-10"id="heading-10">117</span>
+        <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" > 303%</span>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+     <div class="card card-white" id="card-10">
+       <div class="card-body">
+       <div class="overview-header">
+        <h1 >Likes </h1>
+        <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="" srcset="">
+       </div>
+
+       <div class="overview-footer-2">
+        <span class="small-number" id="heading-11">507</span>
+        <span class="positive-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" >  553%</span>
+       </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-lg-3">
+     <div class="card card-white" id="card-11">
+       <div class="card-body">
+       <div class="overview-header">
+        <h1>Likes </h1>
+        <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="" srcset="">
+       </div>
+
+        <div class="overview-footer-2">
+          <span class="small-number" id="heading-12">107</span>
+        <span class="negative-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" >   19%</span>
+        </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-lg-3" >
+     <div class="card card-white" id="card-12">
+       <div class="card-body">
+        <div class="overview-header-2">
+          <h1>Total Views</h1>
+        <img src="../social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg"  alt="" srcset="">
+        </div>
+
+        <div class="overview-footer-2">
+          <span class="small-number" id="heading-13">1407</span>
+        <span class="negative-stats"><img src="../social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" >  12%</span>
+        </div>
+       </div>
+     </div>
+   </div>
+
+
+  </div>
+ </div>
+
+ <!-- CONTRIBUTION - SECTION -->
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Masiga Allan</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.2.0/d3.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
